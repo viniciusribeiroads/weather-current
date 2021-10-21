@@ -6,19 +6,19 @@ function App() {
 
   const [ WeatherForecast, setWeatherForecast ] = useState(null);
 
-  const [ loading, setLoading ] = useState(0);
+  const [ loading, setLoading ] = useState(false);
 
 
   const searchForecastWeather = () => {
+    setLoading(true)
     fetch(`http://api.weatherapi.com/v1/current.json?key=f7e8820069f347638f6222607212010
           &q=${city}&lang=pt`).then( (response) => {
-            setLoading(1)
             if (response.status === 200){
               return response.json()
             }
             
           }).then( (data) => {
-              setLoading(0);
+              setLoading(false);
               console.log('data --> ', data);
               setWeatherForecast(data);
               
@@ -61,11 +61,16 @@ function App() {
             <button className="btn btn-lg btn-dark " onClick={searchForecastWeather}>Pesquisar</button>
 
             
-            
+            {loading ? (
+              <div className="jumbotron">
+                <h1>Buscando os dados ...</h1>
+              </div>
+            ) : null }
 
             {
               
-
+              
+             
 
               WeatherForecast ? (
                 
