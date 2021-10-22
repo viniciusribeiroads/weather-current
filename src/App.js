@@ -46,7 +46,7 @@ function App() {
       <div>
         <nav className='navbar navbar-expand-md navbar-dark bg-dark mb-4'>
           <a className="navbar-brand" href="#search">
-            Ebac Weather
+            Previsão do Tempo
           </a>
           <a href='https://github.com/viniciusribeiroads' target='_blank'>
             <img src="https://img.icons8.com/fluency/48/000000/github.png"/>
@@ -96,7 +96,7 @@ function App() {
                 </div>
               ) : 
                 <div className="mt-4 d-flex align-itens-center">
-                    <h3>Ops, não conseguimos encontrar :(</h3>
+                    <h3>Ops, não conseguimos encontrar :( </h3>
                 </div>
             }
           </div>
