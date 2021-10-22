@@ -1,5 +1,6 @@
-# weather-current
-Consumindo uma API de consulta do clima em uma aplicação React, projeto feito em um workshop da EBAC.
+## weather-current
+### Consumindo uma API de consulta do clima em uma aplicação React, projeto feito em um workshop da EBAC.
+
 
 # Como iniciar nosso projeto
 ### Rode o comando npm install para podermos instalarmos todas as nossas dependencias.
